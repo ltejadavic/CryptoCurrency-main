@@ -1,0 +1,50 @@
+.crypto-list-container {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    align-items: center; /* Centrado horizontal */
+    width: 100%;
+    max-width: 1200px; /* Controla el ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+    padding: 20px;
+  }
+  
+  .crypto-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adaptación para varios tamaños de pantalla */
+    gap: 10px;
+    width: 100%; /* Asegura que la tabla use todo el ancho disponible */
+  }
+  
+  .crypto-row {
+    display: flex;
+    justify-content: space-between; /* Distribuye espacio entre nombre, precio y botón */
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  
+  .crypto-name {
+    font-weight: bold;
+  }
+  
+  .crypto-price {
+    margin-right: 20px;
+  }
+  
+  .select-button {
+    padding: 8px 16px; /* Ajusta el padding para que no sea demasiado grande */
+  }
+  
+  .select-button:hover {
+    background-color: darken(--primary-color, 10%);
+  }
+
+  /* Estilos adicionales para responsividad y mejoras visuales */
+@media (max-width: 600px) {
+    .crypto-table {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Más pequeño para dispositivos móviles */
+    }
+  }

@@ -1,0 +1,80 @@
+/* Centrado vertical y horizontal */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima de la pantalla */
+  }
+  
+  /* Container para el login */
+  .container {
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  /* Input fields */
+  input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Incluir el padding en el tamaño total */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: var(--input-focus-color);
+  }
+  
+  /* Botón */
+  button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #f07b3b; /* Color más oscuro en hover */
+  }
+  
+  /* Título */
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  /* Links de texto */
+  .link {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .link:hover {
+    color: darken(var(--primary-color), 10%);
+  }
+  
+  /* Estilos para los mensajes de error */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+  }

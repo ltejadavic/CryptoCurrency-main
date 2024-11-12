@@ -1,0 +1,141 @@
+/* Container for the main content */
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling the balance and value section */
+  .balance-section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+/* Ajustes para contenedor de botones */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Ajuste para que los botones tengan ancho basado en su contenido */
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #F2994A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Añadiendo transiciones a los botones para una interacción más suave */
+  button {
+    transition: background-color 0.3s;
+  }
+  
+
+  button:hover {
+    background-color: darken(var(--accent-color), 10%);
+  }
+  
+  /* List styling for investments */
+  .investment-list {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .investment-list li {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+  }
+  
+  /* Styling for log out button */
+  .logout-button {
+    background-color: #E57373;
+  }
+  
+  .logout-button:hover {
+    background-color: #e55050;
+  }
+  
+  /* Center the container vertically */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+
+  /* Estilo para los contenedores de inversión */
+  .investment-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .investment-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Mejorar la visualización de las ganancias/perdidas con barras de progreso */
+  .progress-bar {
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+  }
+  
+  .negative .progress-bar-inner {
+    background-color: #e57373; /* Rojo para las pérdidas */
+  }
+
+  /* Estilo para el saludo y el nombre del usuario */
+  .welcome-message {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .welcome-name {
+    color: var(--primary-color);
+  }
+  
+  .important-info {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .home-container button {
+    width: auto;
+    margin: 5px; /* Añade margen para separación */
+  }
